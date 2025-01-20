@@ -1,0 +1,26 @@
+.nav-bar{ 
+    background-image: url(images/Vector\ 1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+}
+.navbar2{
+    background-color: red;
+
+}
+.Logos{
+    background-image: url(images/Vector\ 3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.testimonial{
+    background-image: url(images/Rectangle\ 5.png);
+    background-repeat: no-repeat;
+   height: 700px;
+}
+   .footer-section{ 
+    background-image: url(images/Rectangle\ 8.png);
+    background-repeat: no-repeat;
+    /* height: 700px; */
+}
+
