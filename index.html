@@ -9,13 +9,13 @@
   </head>
   <body>
     <!--nav-bar and hero-section-->
-    <div class="nav-bar h-[100vh]">
+    <div class="nav-bar bg-gradient-to-r from-cyan-500 to-blue-500  md:bg-gradient-none md:h-[100vh]">
       <div
         class="flex justify-between container mx-auto justify-center p-8 text-white"
       >
         <!--nav-bar-->
-        <div class="w-44">
-          <img src="images/Logo.png" alt="" />
+        <div class=" md:w-44 w-32">
+          <img class="w-full objectFit-contain" src="images/Logo.png" alt="" />
         </div>
         <div class="hidden md:flex gap-7">
           <a href="#">Product</a>
@@ -29,7 +29,7 @@
             class="border-solid border-none p-2 rounded-2xl w-32 bg-[#FFBC51]"
           >
             Sign in
-          </button>
+          </button> 
         </div>
 
         <div class="md:hidden ">
@@ -40,15 +40,15 @@
 
       <!--hero-section-->
       <div
-        class="text-white flex justify-between items-center container mx-auto"
+        class="text-white sm:flex justify-between items-center container mx-auto "
       >
         <!--first-child-->
-        <div>
-          <h1 class="text-5xl font-bold">
+        <div class="p-4 md:p-0 ">
+          <h1 class="md:text-5xl font-bold text-2xl">
             Get Your <br />
             Payment Faster
           </h1>
-          <p class="text-2xl mt-4">
+          <p class="md:text-2xl mt-4 text-[14.4px]">
             Blinqpay helps bussinesses in Africa get paid by anyone,anywhere in
             the world
           </p>
@@ -57,9 +57,17 @@
           >
             Start Now
           </button>
+          <div class=" md:hidden flex justify-between gap-6 items-center w-full mt-4">
+            <img class="w-8 h-5 aspect-16/9 object-fit" src="images/land-roverin-logo.png" alt="">
+            <img class="w-8 h-5 aspect-16/9 object-fit" src="images/Vector(1).png" alt="">
+            <img class="w-8 h-5 aspect-16/9 object-fit" src="images/Vector(2).png" alt="">
+            <img class="w-8 h-5 aspect-16/9 object-fit" src="images/Vector(3).png" alt="">
+            <img class="w-8 h-5 aspect-16/9 object-fit" src="images/Group(1).png" alt="">
+          </div>
+          
         </div>
         <!--end of first-child-->
-        <div>
+        <div class="bg-white md:bg-transparent flex justify-center md:block">
           <img src="images/Group 438.png" alt="" />
         </div>
       </div>
@@ -67,9 +75,9 @@
     <!--end of hero-section-->
 
     <!--about-section-->
-    <div class="container mx-auto mt-36 flex gap-96">
+    <div class="container mx-auto md:mt-36 flex gap-96">
       <!--first-child-->
-      <div class="flex gap-10">
+      <div class="hidden md:block gap-10">
         <div class="mt-10 gap-7">
           <!--child-1-->
           <div
@@ -119,10 +127,10 @@
           <!--end of -child-4-->
         </div>
       </div>
-      <div>
-        <h1 class="text-5xl text-gray-600 font-bold">
-          Make & Share <br />
-          <span class="text-sky-950">Payment</span> With <br />Community
+      <div class="p-6">
+        <h1 class="md:text-5xl text-gray-600 font-bold text-2xl">
+          Make & Share 
+          <span class="text-sky-950">Payment</span> With Community
         </h1>
         <p class="mt-4 text-gray-600">
           Hac sem ut eget tellus diam convallis <br />
@@ -135,7 +143,7 @@
     <div class="Logos">
       <!-- logo-symbol -->
       <div
-        class="container mx-auto mt-36 flex justify-between items-center bg-grey-100 p-12"
+        class=" hidden mx-auto mt-36  md:flex justify-between items-center bg-grey-100 p-12"
       >
         <div>
           <img src="images/land-roverin-logo.png" alt="" />
@@ -157,12 +165,12 @@
 
       <!-- credit card-section -->
       <div
-        class="container mx-auto flex justify-between items-center justify-center"
+        class="container mx-auto flex md:flex-row justify-between items-center justify-center flex-col"
       >
-        <div class="p-12">
-          <p class="text-xs text-rose-600">CREDIT CARD</p>
-          <h1 class="font-bold text-5xl text-sky-950">
-            <span class="text-gray-400">Payment</span> <br />Gets Easier
+        <div class="md:p-12 order-2 p-6">
+          <p class="md:text-xs text-rose-600 text-xs">CREDIT CARD</p>
+          <h1 class="font-bold text-2xl text-sky-950">
+            <span class="md:text-gray-400">Payment</span> Gets Easier
           </h1>
           <p class="mt-4 text-gray-600">
             Hac sem ut eget tellus diam convallis <br />
@@ -170,16 +178,16 @@
           </p>
           <button class="font-bold text-sky-950">Learn More →</button>
         </div>
-        <div>
+        <div class="order-1">
           <img src="images/image 14.png" alt="" />
         </div>
       </div>
       <!-- end of credit card-section -->
 
       <!-- image-text-section -->
-      <div class="container mx-auto flex justify-between items-center">
+      <div class="container mx-auto flex justify-between items-center md:flex-row flex-col">
         <!-- images -->
-        <div class="flex gap-7">
+        <div class="flex md:gap-7 p-10 gap-4">
           <div>
             <img
               class="rounded-full w-20"
@@ -217,10 +225,10 @@
           </div>
         </div>
         <!-- text -->
-        <div class="p-12">
+        <div class="md:p-12 p-8">
           <p class="text-xs text-rose-600">MOBILE TRANSACTION</p>
-          <h1 class="text-5xl text-gray-600 font-bold">
-            Smart Mobile <br />
+          <h1 class="md:text-5xl text-gray-600 font-bold text-2xl">
+            Smart Mobile 
             <span class="text-sky-950">Banking</span>
           </h1>
           <p class="mt-4 text-gray-600">
@@ -234,8 +242,8 @@
       <!--end of images -->
 
       <!-- transaction-section -->
-      <div class="flex justify-between container mx-auto items-center mt-32">
-        <div>
+      <div class="flex justify-between container mx-auto items-center md:mt-32">
+        <div class="md:block hidden">
           <div class="p-12">
             <p class="text-xs text-rose-600">SECURE TRANSACTION</p>
             <h1 class="text-5xl text-gray-600 font-bold">
@@ -257,19 +265,19 @@
     <!-- testimonial -->
     <div class="testimonial flex items-center">
       <div
-        class="mt-36 flex items-center justify-between container mx-auto p-12"
+        class="mt-36 flex items-center md:justify-between container mx-auto p-12 md:flex-row flex-col justify-center text-center"
       >
         <div class="items-center mt-44">
-          <h1 class="font-bold text-5xl text-white items-center">
+          <h1 class="font-bold md:text-5xl text-white items-center text-xl">
             What Our <span> Customer</span> <br />Are saying
           </h1>
-          <p class="mt-4 text-white">
+          <p class="hidden md:block mt-4 text-white">
             Hac sem ut eget tellus diam convallis <br />
             lacus a,interdum nulla sem adippiscing <br />lnw
           </p>
         </div>
-        <div>
-          <div>
+        <div class="">
+          <div class="flex justify-center md:block mt-4">
             <img src="images/Ellipse 4.png" alt="" />
           </div>
           <p class="mt-4 text-white">
@@ -284,10 +292,10 @@
     <!--end of testimonial -->
 
     <!-- footer -->
-    <section class="footer-section relative ">
+    <section class=" footer-section md:relative">
       <!-- other-section -->
       <div
-        class=" absolute -top-10 left-52 container mx-auto flex items-center justify-center p-10 gap-10 max-w-4xl bg-white rounded-lg shadow-xl"
+        class="md:block hidden md:absolute -top-10 left-52 container mx-auto flex items-center justify-center p-10 gap-10 max-w-4xl bg-white rounded-lg shadow-xl"
       >
         <h1 class="font-bold text-2xl">What Are You Waiting For?</h1>
         <button class="border-solid border-none p-2 rounded w-36 bg-[#FFBC51]">
@@ -295,7 +303,7 @@
         </button>
       </div>
 
-      <footer class="container mx-auto flex justify-between pt-40  p-12">
+      <footer class="container mx-auto flex md:flex-row md:justify-between pt-40  p-12 flex-col justify-center items-center gap-10 h-[100%]">
         <div>
           <div>
             <img src="images/Logo.png" alt="" />
@@ -306,8 +314,8 @@
           </div>
         </div>
         <div>
-          <h1 class="font-bold text-lg text-white mb-8">Service</h1>
-          <div class="flex flex-col text-gray-400">
+          <h1 class="font-bold text-lg text-white mb-8 text-center">Service</h1>
+          <div class="flex flex-col text-gray-400 text-center">
             <a href="#">Design</a>
             <a href="#">Coding</a>
             <a href="#">Development</a>
@@ -317,8 +325,8 @@
           </div>
         </div>
         <div>
-          <h1 class="font-bold text-lg text-white mb-8">Products</h1>
-          <div class="flex flex-col text-gray-400">
+          <h1 class="font-bold text-lg text-white mb-8 text-center">Products</h1>
+          <div class="flex flex-col text-gray-400 text-center">
             <a href="#">Hotel Management</a>
             <a href="#">Rent Management</a>
             <a href="#">Micro-Finance</a>
@@ -327,8 +335,8 @@
           </div>
         </div>
         <div>
-          <h1 class="font-bold text-lg text-white mb-8">Company</h1>
-          <div class="flex flex-col text-gray-400">
+          <h1 class="font-bold text-lg text-white mb-8 text-center">Company</h1>
+          <div class="flex flex-col text-gray-400 text-center">
             <a href="#">Las Vegas</a>
             <a href="#">New York</a>
             <a href="#">Tokyo</a>
